@@ -1,0 +1,156 @@
+/* Resetting some default styles */
+body, h1, h2, p, form, input, label, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styling for the entire page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef2f3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Styling for the main container */
+.container {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 420px;
+    width: 90%;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive typography for headings */
+h1 {
+    text-align: center;
+    color: #222;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Form layout and styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Styling for form labels */
+label {
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Input field styling */
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Button styling */
+button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Result section styling */
+#result {
+    margin-top: 25px;
+}
+
+#area-value {
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Responsive media query for smaller devices */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    input {
+        padding: 8px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%;
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    input {
+        padding: 7px;
+        font-size: 14px;
+    }
+}
